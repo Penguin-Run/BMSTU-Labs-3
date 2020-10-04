@@ -1,14 +1,19 @@
-class Calc_enum
+# frozen_string_literal: true
+
+# class with calculation
+class CalcEnum
   SIN_X = 3
   EPS_3 = 0.001
   EPS_4 = 0.0001
   PRECISE_VALUE = Math.sin(3)
 
   def print(eps)
-    p 'Calculation:'
-    p calc_arr = Calc_enum.new.calc_sin_enum.take_while { |calc_value| (Calc_enum::PRECISE_VALUE - calc_value).abs >= eps*0.1 }
-    puts 'Precise value of sin(3): ' + PRECISE_VALUE.to_s
-    calc_arr[calc_arr.size-1]
+    p "Calculation:"
+    calc_arr = CalcEnum.new.calc_sin_enum.take_while do |calc_value|
+      (CalcEnum::PRECISE_VALUE - calc_value).abs >= eps * 0.1
+    end
+    puts "Precise value of sin(3): " + PRECISE_VALUE.to_s
+    calc_arr[calc_arr.size - 1]
   end
 
   def calc_sin_enum
@@ -20,10 +25,11 @@ class Calc_enum
 
       loop do
         yielded.yield calc_value
+        calculation = (SIN_X**n_dependant) / factorial(n_dependant).to_f
         if is_sum
-          calc_value += (SIN_X**n_dependant) / factorial(n_dependant).to_f
+          calc_value += calculation
         else
-          calc_value -= (SIN_X**n_dependant) / factorial(n_dependant).to_f
+          calc_value -= calculation
         end
         is_sum = !is_sum
         n_dependant += 2
@@ -42,5 +48,3 @@ class Calc_enum
     end
   end
 end
-
-

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# class with calculation
 class Calc
   SIN_X = 3
   EPS_3 = 0.001
@@ -12,10 +13,11 @@ class Calc
     n_dependant = 3
     count = 0
     while (PRECISE_VALUE - calc_value).abs > eps
+      calculation = (SIN_X**n_dependant) / factorial(n_dependant).to_f
       if is_sum
-        calc_value += (SIN_X**n_dependant) / factorial(n_dependant).to_f
+        calc_value += calculation
       else
-        calc_value -= (SIN_X**n_dependant) / factorial(n_dependant).to_f
+        calc_value -= calculation
       end
       is_sum = !is_sum
       n_dependant += 2
@@ -34,5 +36,3 @@ class Calc
     end
   end
 end
-
-
