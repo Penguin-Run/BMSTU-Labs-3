@@ -6,8 +6,9 @@ class Calc_enum
 
   def print(eps)
     p 'Calculation:'
-    p(Calc_enum.new.calc_sin_enum.take_while { |calc_value| (Calc_enum::PRECISE_VALUE - calc_value).abs >= eps })
+    p calc_arr = Calc_enum.new.calc_sin_enum.take_while { |calc_value| (Calc_enum::PRECISE_VALUE - calc_value).abs >= eps*0.1 }
     puts 'Precise value of sin(3): ' + PRECISE_VALUE.to_s
+    calc_arr[calc_arr.size-1]
   end
 
   def calc_sin_enum
