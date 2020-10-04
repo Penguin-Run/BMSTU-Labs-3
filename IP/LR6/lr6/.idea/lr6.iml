@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/BMSTU-Labs-3/IP/LR6/lr6">
+      <sourceFolder url="file://$USER_HOME$/BMSTU-Labs-3/IP/LR6/lr6/features" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/BMSTU-Labs-3/IP/LR6/lr6/spec" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/BMSTU-Labs-3/IP/LR6/lr6/test" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="RVM: ruby-2.7.0" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.13.0, RVM: ruby-2.7.0) [gem]" level="application" />
+  </component>
+</module>
