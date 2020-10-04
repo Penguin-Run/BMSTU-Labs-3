@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+<meta charset="utf-8"/>
+
+<title>Page Title</title>
+
+<style>
+.startButton {
+	margin-top: 10px;
+	margin-left: 5px;
+	width: 290px;
+	height: 50px;
+}
+
+.formButton {
+	display:inline-block;
+	width: 140px;
+	height: 20px;
+}
+
+.formEditTexts {
+	display:inline-block;
+	width: 280px;
+	height: 15px;
+}
+
+table {
+	width: 300px; /* Ширина таблицы */
+	border: 1px solid green; /* Рамка вокруг таблицы */
+ }
+</style>
+
+<script>
+let elementTree = ""
+let recursiveCount = 0
+
+function onStartButtonClick() {
+	let nodeList = document.getElementById("html").children
+
+	elementTree += "<!DOCTYPE html>\n<html>\n"
+	nodesOutput(nodeList)
+	elementTree += "\n</html>"
+
+	console.log(elementTree)
+
+	let text = document.createTextNode(elementTree)
+	document.getElementById("htmlOutput").appendChild(text)
+}
+
+function nodesOutput(nodes) {
+	recursiveCount += 1
+
+	for (let i = 0; i < nodes.length; i++) {
+		if (i != 0) elementTree += "\n"
+		for (let j = 0; j < recursiveCount; j++) elementTree += "\u00A0\u00A0\u00A0\u00A0" // UNICODE representation of &nbsp;
+
+		elementTree += "<" + nodes[i].localName + ">"
+		if (nodes[i].children.length != 0) {
+			elementTree += "\n"
+			nodesOutput(nodes[i].children)
+
+			// closure
+			elementTree += "\n"
+			recursiveCount -= 1
+			for (let j = 0; j < recursiveCount; j++) elementTree += "\u00A0\u00A0\u00A0\u00A0" // UNICODE representation of &nbsp;
+			elementTree += "</" + nodes[i].localName + ">"
+		} else {
+			elementTree += "</" + nodes[i].localName + ">"
+		}
+	}
+}
+
+</script>
+
+</head>
+<body id="body">
+	<div id="baseDiv">
+		<h3>Вывод дерева HTML на примере разметки формы авторизации</h3>
+		<div>
+			<table>
+				 <tr>
+				 <th colspan="2">Авторизация</th>
+				 </tr>
+				 <tr>
+				 <td colspan="2"><input type="text" class="formEditTexts" name="login" value="login"></td>
+				 </tr>
+				 <tr>
+				 <td colspan="2"><input type="text" class="formEditTexts" name="password" value="password"></td>
+				 </tr>
+				 <tr>
+				 <td>
+				 <button type="button" class="formButton" name="button" value="Sign in">Sign in</button>
+				 </td>
+				 <td>
+				 <button type="button" class="formButton" name="button" value="New here?">New here?</button>
+				 </td>
+				 </tr>
+			</table>
+		</div>
+	</div>
+
+	<div>
+		<button class="startButton" onclick="onStartButtonClick()" type="button" name="button" value="Find elements tree">Find elements tree</button>
+		<h4>Вывод дерева элементов HTML:</h4>
+		<pre id="htmlOutput"></pre>
+	</div>
+</body>
+</html>

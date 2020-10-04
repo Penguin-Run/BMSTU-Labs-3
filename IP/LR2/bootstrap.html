@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+ <title>ICS6 Bootstrap</title>
+ <link
+ href="http://e-learning.bmstu.ru/moodle/pluginfile.php/754
+6/mod_folder/content/0/bootstrap.min.css" rel="stylesheet">
+ <style>
+ html {
+ position: relative;
+ min-height: 100%;
+ }
+ body {
+ margin-bottom: 40px;
+ }
+
+ main {
+ margin-top: 15px;
+ }
+
+ table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+ }
+
+ footer {
+ height: 40px;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ }
+ .my-primary {
+ background-color: #ff00ff;
+ color: white;
+ }
+ .textdiv {
+    white-space: pre;
+}
+.colortext {
+     color: red; /* Красный цвет выделения */
+}
+
+.fontText {
+  font: 15px Arial, sans-serif;
+}
+
+.fontColor {
+  color: blue;
+}
+
+ </style>
+</head>
+<body>
+ <header>
+ <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+ <a class="navbar-brand" href="#">Navbar</a>
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+ <a class="nav-link" href="#">Home
+ <span class="sr-only">(current)</span>
+ </a>
+ </li>
+ <li class="nav-item">
+59
+ <a class="nav-link" href="#">Link</a>
+ </li>
+ </ul>
+ </nav>
+ </header>
+ <main class="container">
+ <div class="row">
+ <div class="col-4">
+ <img
+ src=" http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/
+mod_folder/content/0/avatar.jpg"
+ alt="avatar" width="150" height="150">
+ </div>
+ <div class="col-8">
+   <h1> Laboratory work <em>one</em>. Part <em>one</em></h1>
+   <p>This is the first <span class="colortext">paragraph</span>.</p>
+   <p>Second paragraph is <span class="fontText">important</span></p>
+   <p>Just for you to <span class="fontColor">know</span></p>
+   <p>This text is <s>outdated</s></p>
+ </div>
+ </div>
+<br>
+ <div class="row">
+ <div class="col-4">
+ <table class="my-primary">
+   <tr>
+     <th colspan="2" class="fontText">Авторизация</th>
+   </tr>
+   <tr>
+     <td colspan="2"><input type="text" class="myclass2" name="login" value="login"></td>
+   </tr>
+   <tr>
+     <td colspan="2"><input type="text" class="myclass2" name="password" value="password"></td>
+   </tr>
+   <tr>
+     <td>
+       <button type="button" class="fontText" name="button" value="Sign in">Sign in</button>
+     </td>
+     <td>
+       <button type="button" class="fontText" name="button" value="New here?">New here?</button>
+     </td>
+   </tr>
+ </table>
+ </div>
+ <div class="col-8">
+   <table>
+     <tr>
+       <th rowspan="8" class="my-primary">ЧЕТВЕРГ</th>
+       <td class="fontText">Время</td>
+       <td class="fontText">ЧС</td>
+       <td class="fontText">ЗН</td>
+     </tr>
+     <tr>
+       <td>08:30 - 10:05</td>
+       <td colspan="2">(сем) Иностранный язык Каф</td>
+     </tr>
+     <tr>
+       <td>10:15 - 11:50</td>
+       <td colspan="2">(лек) Теория вероятностей и математическая статистика 218л Горяинов В. Б.</td>
+     </tr>
+     <tr>
+       <td>12:00 - 13:35</td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>13:50 - 15:25</td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>15:40 - 17:15</td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>17:25 - 19:00</td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>19:10 - 20:45</td>
+       <td></td>
+       <td></td>
+     </tr>
+   </table>
+ </div>
+ </div> <br>
+ <div class="row">
+ <div class="col">
+
+   <h1> Laboratory work <em>one</em>. Part <em>one</em></h1>
+   <p>This is the first <em>paragraph</em>.</p>
+   <p>Second paragraph is <strong>important</strong></p>
+   <p>Just for you to <mark>know</mark></p>
+   <p>This text is <s>outdated</s></p>
+   <p><small>Just a comment</small></p>
+   <var>l</var> × <var>w</var> × <var>h</var> = volume
+   <p>C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
+   <p><var>a<sup>2</sup></var>+<var>b<sup>2</sup></var>
+   =<var>c<sup>2</sup></var></p>
+
+ </div>
+ </div>
+ </main>
+ <footer class="my-primary">
+ <div class="container">
+ <p class="footer-text">Footer</p>
+ </div>
+ </footer>
+</body>
+</html>

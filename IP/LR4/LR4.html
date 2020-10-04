@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Page Title</title>
+		<style>
+			.onMouse:hover {
+				background-color: aqua;
+			}
+			.addProductForm {
+				margin-top: 16px;
+				margin-bottom: 16px;
+				padding-left: 8px;
+				padding-bottom: 8px;
+				width: 300px; /* Ширина таблицы */
+				border: 1px solid green; /* Рамка вокруг таблицы */
+			}
+			.addInCart { }
+
+			table {
+				width: 300px; /* Ширина таблицы */
+				border: 1px solid green; /* Рамка вокруг таблицы */
+			 }
+			 th, td {
+			   border: 1px solid black;
+			   border-collapse: collapse;
+			 }
+		</style>
+	</head>
+
+	<body id="body" onload="addClickListenersToPluses()">
+		<div id="catalog">
+			<table id="catalogTable">
+				 <tr>
+				 	<th colspan="3">Каталог Борщей</th>
+				 </tr>
+				 <tr>
+				 	<th>Наименование</th>
+				 	<th>Цена</th>
+				 	<th>В корзину</th>
+				 </tr>
+				 <tr>
+				 	<td>Украинский соленый</td>
+				 	<td class="onMouse">490</td>
+				 	<td class="addInCart" id="plus1">+</td>
+				 </tr>
+				 <tr>
+				 	<td>Белорусский подсоленый</td>
+				 	<td class="onMouse">390</td>
+				 	<td class="addInCart" id="plus2">+</td>
+				 </tr>
+				 <tr>
+				 	<td>Русский пересоленый</td>
+				 	<td class="onMouse">290</td>
+				 	<td class="addInCart" id="plus3">+</td>
+				 </tr>
+			</table>
+		</div >
+
+		<div class="addProductForm">
+			<form>
+				<p>Добавить борщ:</p>
+				<input id="nameTextEdit" type="text" placeholder="Введите наименование" name="name"> <br>
+				<input id="priceTextEdit" type="text" placeholder="Введите цену" name="price"> <br>
+				<button onclick="onAddButtonClick()" type="button" name="button">Добавить в Каталог</button>
+				<button onclick="priceCalc()" type="button" name="button">Расчитать стоимость</button>
+			</form>
+		</div>
+
+		<div id="cart">
+			<table id="cartTable">
+				 <tr>
+				 	<th colspan="2">Корзина Борщей</th>
+				 </tr>
+				 <tr>
+				 	<th>Наименование</th>
+				 	<th>Цена</th>
+				 </tr>
+				 <tr>
+				 	<td>Стоимость:</td>
+				 	<td>0</td>
+				 </tr>
+			</table>
+		</div>
+
+		<script src="lr4.js"></script>
+	</body>
+</html>

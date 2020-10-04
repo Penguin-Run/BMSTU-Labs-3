@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Tutorial</title>
+  <meta charset="utf-8"/>
+  <style>
+  .myclass{
+   display:inline-block;
+   width: 140px;
+   height: 20px;
+  }
+  .myclass2{
+    display:inline-block;
+    width: 280px;
+    height: 15px;
+  }
+  table {
+    width: 300px; /* Ширина таблицы */
+    border: 1px solid green; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   td {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+   }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th colspan="2">Авторизация</th>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="text" class="myclass2" name="login" value="login"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="text" class="myclass2" name="password" value="password"></td>
+  </tr>
+  <tr>
+    <td>
+      <button type="button" class="myclass" name="button" value="Sign in">Sign in</button>
+    </td>
+    <td>
+      <button type="button" class="myclass" name="button" value="New here?">New here?</button>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
