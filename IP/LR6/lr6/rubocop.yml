@@ -6,3 +6,6 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Max: 100
+
+Style/StringLiterals:
+  Enabled: false
