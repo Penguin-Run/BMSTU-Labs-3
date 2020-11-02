@@ -1,0 +1,7 @@
+<h3>Страница для ввода</h3>
+<%= form_tag("/result", :method => "get") do %>
+    <%= label_tag("Number to check:") %>
+    <%= text_field_tag(:number) %>
+    <br/>
+    <%= submit_tag("Output result") %>
+<% end %> 

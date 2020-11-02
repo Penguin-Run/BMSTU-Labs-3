@@ -1,0 +1,17 @@
+<h3>Страница для вывода результатов подсчета</h3>
+<p id="result">
+	<% if @result == "no such sequences to output[]" || @result == "incorrect input" || @result == "nil input (might be init test)"%>
+	<%= @result%>
+	<%else%>
+	<table>
+		<tr><td>sequence</td><td>size</td></tr>
+		<% @result.each_with_index do |elem, index| %>
+		<tr>
+			<td><%= index+1%></td>
+			<td><%= elem%></td>
+			<td><%= index == @result.size-1 ? 'YES' : 'NO'%></td>
+		</tr>
+		<% end %>
+	</table>
+	<% end %>
+</p>
