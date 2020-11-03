@@ -2,13 +2,16 @@ class IoManagerController < ApplicationController
 	def input; end
 
 	def result
+		console
+		# byebug -- open up debugger in terminal console
 		input = params[:number]
-		# validation
+		#---------------validation-----------------#
 		if (input.to_i == 0) and (input != "0") 
 			@result = "Please, input valid number"
 		else
 			@result = main_logic(input.to_i)
 		end
+		#---------------end-validation-----------------#
 	end
 
 
