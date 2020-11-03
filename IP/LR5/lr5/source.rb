@@ -8,10 +8,9 @@ module Source
     result = [] # array with the result string sequence
     (0..args.size - 1).each do |count|
       str = args[count].split(' ')
-      result_str = ''
-      str.each do |word|
+      result_str = str.reduce('') do |sum, word|
         word.gsub!('ing', 'ed') if word.index('ing') == word.size - 3
-        result_str += word + ' '
+        sum + word + ' '
       end
       p result_str
       result << result_str
@@ -24,9 +23,5 @@ module Source
     xxx = xxx.to_i
     yyy = yyy.to_i
     p (2 * Math.cos(xxx - Math::PI / 6)) / (0.5 + Math.sin(yyy)**2)
-  end
-
-  def self.testtest
-    puts 'its me'
   end
 end

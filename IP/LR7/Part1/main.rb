@@ -12,11 +12,10 @@ def find_equal_start(filename1, filename2)
   components1 = str1.split
   components2 = str2.split
 
-  result = ''
-  i = 0
-  while (components1[i] == components2[i]) && (i < components1.size) && (i < components2.size)
-    result += components1[i] + ' '
-    i += 1
+
+  sorted_array = components1.zip(components2).take_while { |elem1, elem2| elem1 == elem2 }
+  result = sorted_array.reduce('') do |str, elem|
+    str + elem[0] + ' '
   end
   result
 end

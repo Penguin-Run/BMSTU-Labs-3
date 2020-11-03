@@ -14,11 +14,7 @@ class Calc
     count = 0
     while (PRECISE_VALUE - calc_value).abs > eps
       calculation = (SIN_X**n_dependant) / factorial(n_dependant).to_f
-      if is_sum
-        calc_value += calculation
-      else
-        calc_value -= calculation
-      end
+      is_sum ? calc_value += calculation : calc_value -= calculation
       is_sum = !is_sum
       n_dependant += 2
       count += 1
