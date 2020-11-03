@@ -3,10 +3,12 @@ class IoManagerController < ApplicationController
 
 	def result
 		input = params[:number]
-
-		# TODO: validation
-
-		@result = main_logic(input.to_i)
+		# validation
+		if (input.to_i == 0) and (input != "0") 
+			@result = "Please, input valid number"
+		else
+			@result = main_logic(input.to_i)
+		end
 	end
 
 
