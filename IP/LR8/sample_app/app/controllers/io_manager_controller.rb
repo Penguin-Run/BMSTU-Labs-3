@@ -2,14 +2,13 @@ class IoManagerController < ApplicationController
 	def input; end
 
 	def result
-		console
 		# byebug -- open up debugger in terminal console
-		input = params[:number]
+		number = params[:number]
 		#---------------validation-----------------#
-		if (input.to_i == 0) and (input != "0") 
+		if (number.to_i == 0) and (number != "0") 
 			@result = "Please, input valid number"
 		else
-			@result = main_logic(input.to_i)
+			@result = main_logic(number.to_i)
 		end
 		#---------------end-validation-----------------#
 	end
@@ -33,10 +32,6 @@ class IoManagerController < ApplicationController
 	end
 
 	def reverse_number(number)
-	  (number
-	       .to_s
-	       .reverse
-	       .chars
-	       .reduce('') { |sum, elem| sum + elem }).to_i
+	  number.to_s.reverse.to_i
 	end
 end
