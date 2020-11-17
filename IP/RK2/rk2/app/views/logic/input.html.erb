@@ -1,0 +1,7 @@
+<h3>Страница для ввода</h3>
+<%= form_tag("/result", :method => "get") do %>
+    <%= label_tag("Enter sequence:") %>
+    <%= text_field_tag(:sequence) %>
+    <br/>
+    <%= submit_tag("Output result") %>
+<% end %> 

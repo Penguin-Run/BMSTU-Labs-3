@@ -1,0 +1,16 @@
+<h3>Страница для вывода результатов подсчета</h3>
+<p id="result">
+	<% if @result == "no such sequences to output[]" || @result == "incorrect input" || @result == "nil input (might be init test)"%>
+	<%= @result%>
+	<%else%>
+	<table>
+		<tr><td>index</td><td>element</td></tr>
+		<% @result.each_with_index do |elem, index| %>
+		<tr>
+			<td><%= index %></td>
+			<td><%= elem %></td>
+		</tr>
+		<% end %>
+	</table>
+	<% end %>
+</p>
