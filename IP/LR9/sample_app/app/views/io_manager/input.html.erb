@@ -1,7 +1,11 @@
 <h3>Страница для ввода</h3>
-<%= form_tag("/result", :method => "get") do %>
+<%= form_tag("/result.json", :method => "get", remote: true, id: 'calc_form') do %>
     <%= label_tag("Number to check:") %>
     <%= text_field_tag(:number) %>
     <br/>
     <%= submit_tag("Output result") %>
 <% end %> 
+
+<div id="result">
+	<!-- поле для асинхронного вывода результатов вычислений -->
+</div> 

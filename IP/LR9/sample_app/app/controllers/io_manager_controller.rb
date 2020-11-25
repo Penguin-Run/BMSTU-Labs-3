@@ -11,6 +11,14 @@ class IoManagerController < ApplicationController
 			@result = main_logic(number.to_i)
 		end
 		#---------------end-validation-----------------#
+
+		respond_to do |format|
+			format.html 
+			format.json do
+				render json:
+					{type: @result.class.to_s, value: @result}
+			end
+ 		end 
 	end
 
 
