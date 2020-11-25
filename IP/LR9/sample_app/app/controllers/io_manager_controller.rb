@@ -25,12 +25,17 @@ class IoManagerController < ApplicationController
 	def main_logic(number)
 		# stuck on 98798674657
 	  calc = Enumerator.new do |check_func|
+	  	index = 0
 	    loop do
 	      number = number + reverse_number(number)
 	      check_func.yield number
+	      index += 1
+	      if (index > 10000) 
+	      	return "Execution time expired" + " (> 10 000 iterations)"
+	      end
 	    end
 	  end
-	  result = calc.take_while { |calc_value| (not palindrome?(calc_value)) }
+	  result = calc.take_while { |calc_value, index| (not palindrome?(calc_value)) }
 	  result.push(number)
 	end
 

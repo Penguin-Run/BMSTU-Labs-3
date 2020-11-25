@@ -1,7 +1,19 @@
 function show_result(data){
 	var result = document.getElementById("result");
-	result.innerHTML = "<hr/>Result is: " + data.value + "<hr/><p>"+Date()+"</p>";
-	console.log("io_manager js handler triggered");
+	insertToHTML = "<table>";
+	if (data.type == "Array") {
+		arr = data.value;
+		for (i = 0 ; i < arr.length - 1; i++) {
+			insertToHTML += "<tr><td>" + (i+1) + "</td><td>" + 
+				arr[i] + "</td><td> NO </td></tr>";
+		}
+		insertToHTML += "<tr><td>" + arr.length + "</td><td>" + 
+			data.value[arr.length-1] + "</td><td> YES </td></tr>";		
+	} else {
+		insertToHTML += data.value;
+	}
+	insertToHTML += "</table>";
+	result.innerHTML = "<hr/>Result is: " + insertToHTML + "<hr/><p>"+Date()+"</p>";
 }
 
 handleAjaxSuccess = function (event) {
