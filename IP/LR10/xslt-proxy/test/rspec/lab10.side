@@ -1,0 +1,380 @@
+{
+  "id": "e4155238-6dbf-44a7-9d10-bfd789ad2493",
+  "version": "2.0",
+  "name": "lab10",
+  "url": "http://127.0.0.1:3001",
+  "tests": [{
+    "id": "344c2e66-224f-475c-9822-119a1f7dd7b8",
+    "name": "test_11",
+    "commands": [{
+      "id": "208005f4-b171-40ea-8dbd-5c90f6d36c2e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e8ec182-0cc8-4c4e-afbe-0cfe53f616fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1257x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e38c4aef-7e2d-4840-b54d-486368e2ef02",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb15489e-020a-435b-87c1-c89dc5a6470b",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "98798674656"
+    }, {
+      "id": "539bf5c6-7801-4ee8-a61d-2bd7d2e625a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e10673eb-1304-476c-9842-98238e0d24fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(3) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(3) > .form-check-label", "css:finder"],
+        ["xpath=//fieldset/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,' Отображение сырого XML на стороне браузера')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6279d421-5e66-42c8-963d-16e247b0b24c",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c3e60e8-0e75-4037-8c55-0e0da965b85b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#folder14 > .opened",
+      "targets": [
+        ["css=#folder14 > .opened", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "32dcdb8e-3ccf-46cb-811b-93690966308b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(4) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(4) > .form-check-label", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,' Рендеринг на стороне браузера с помощью XSLT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb40465a-16fb-4c52-baa1-1a2411cb7163",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d839f913-ca58-427e-a03a-76d944223d15",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c00ec21b-8b88-4c88-9575-a70512cacf9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddfd0341-1d7b-42d4-b432-d7f007410db3",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6442409-a5c5-488a-8e35-7c556a8ef9fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a1b7333-79a1-4173-9fb3-5cf1c60d385f",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d870c54-4d76-4dc3-8f66-d19433e1f661",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "151e6ef0-260a-4542-bd93-b1e706a63304",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d89da8-99a9-41f0-8cef-5defb98758f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(3)",
+      "targets": [
+        ["css=.form-check:nth-child(3)", "css:finder"],
+        ["xpath=//fieldset/div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,' Отображение сырого XML на стороне браузера')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1b91650-d992-48bd-aabf-f3d5faee11ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(2) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(2) > .form-check-label", "css:finder"],
+        ["xpath=//fieldset/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,' Рендеринг на стороне сервера этого приложения')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "059b8204-e47d-4f5c-8e5c-793f40af9770",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ee973acc-2ae2-450f-b6aa-fdc7a8180152",
+    "name": "test_22",
+    "commands": [{
+      "id": "168fdf77-c3d8-433b-a319-8a09cc0ba2a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d468380-e852-4715-970a-899befd0ee33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1257x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73ddaab0-d9ba-429a-83da-e924a48db4b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb41e789-73f6-45ce-a279-769e247326db",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "98798674656"
+    }, {
+      "id": "6e03e821-19f2-4148-a4bf-7284c2984932",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(3) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(3) > .form-check-label", "css:finder"],
+        ["xpath=//fieldset/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,' Отображение сырого XML на стороне браузера')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c958b8f-f759-44aa-92af-651d79f6fde4",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "71a2fd0a-991a-408f-8dee-a89920b7a732",
+    "name": "test_33",
+    "commands": [{
+      "id": "ede8c64f-543d-413d-882f-37a881b61eef",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c3cad6e-92c9-40fc-92e5-3316ac8540f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1257x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "688e47c1-e9c2-4914-af23-73ec17a3b6a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f483ee5-02d2-4b2f-8e73-80a36d0b55b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "98798674656"
+    }, {
+      "id": "f055472b-b375-488e-9b5a-0424ead24b01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-check:nth-child(4) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(4) > .form-check-label", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,' Рендеринг на стороне браузера с помощью XSLT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "435c617d-62ef-4451-89cd-59b7f0d2b005",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4c4effc5-9b92-44d7-b4c3-9027c02f88fe",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:3001/"],
+  "plugins": []
+}

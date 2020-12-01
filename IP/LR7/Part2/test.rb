@@ -21,5 +21,19 @@ class Tests < MiniTest::Test
     assert_equal(times, record.times)
   end
 
+  def test_char_new
+    char_code = rand(97..122)
+    symbol = CharSymbol.new(char_code.chr)
+    times = rand(1..30)
+    record = Record.new(char_code.chr, times)
+
+    if (record.is_a?(CharSymbol))
+      assert(true)
+    end
+  end
+
+  # if.is_a?
+  # if.instance_of?
+
   def teardown; end
 end

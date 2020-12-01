@@ -13,10 +13,12 @@ def find_equal_start(filename1, filename2)
   components2 = str2.split
 
 
+  [[1, 6], [2, 4]]
   sorted_array = components1.zip(components2).take_while { |elem1, elem2| elem1 == elem2 }
   result = sorted_array.reduce('') do |str, elem|
     str + elem[0] + ' '
   end
+  # result = 'no mathces' if result == ''
   result
 end
 
