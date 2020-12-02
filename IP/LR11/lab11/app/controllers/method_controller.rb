@@ -49,6 +49,7 @@ class MethodController < ApplicationController
   def results
     result = Result.all.map { |el| { value: el.value, result: ActiveSupport::JSON.decode(el.result) } }
 
+    # http://127.0.0.1:3000/method/results.xml
     respond_to do |format|
       format.xml { render xml: result.to_xml }
     end
