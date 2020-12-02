@@ -21,26 +21,26 @@ class MethodControllerTest < ActionDispatch::IntegrationTest
 
   test 'test_record_in_db' do
     before = Result.count
-    get method_view_url, params: { v1: 333 }
+    get method_view_url, params: { number: 987986746565 }
     after = Result.count
 
     assert_equal before + 1, after
   end
 
   test 'test_different_response_json' do
-    get method_view_url, params: { v1: 10, format: 'json' }
+    get method_view_url, params: { number: 98798674656, format: 'json' }
     first = JSON.parse @response.body
 
-    get method_view_url, params: { v1: 20, format: 'json' }
+    get method_view_url, params: { number: 98798674655, format: 'json' }
     second = JSON.parse @response.body
 
     refute_equal first, second
   end
 
   test 'test_different_response' do
-    get method_view_url, params: { v1: 30 }
+    get method_view_url, params: { number: 33 }
     first = assigns[:result]
-    get method_view_url, params: { v1: 40 }
+    get method_view_url, params: { number: 211 }
     second = assigns[:result]
     refute_equal first, second
   end

@@ -26,6 +26,6 @@ class ResultTest < ActiveSupport::TestCase
   test 'test_positive_value' do
     instance = Result.new(value: -4)
     instance.validate
-    assert_equal instance.errors[:value], ['must be greater than 0']
+    assert_equal instance.errors[:value], ['must be greater than or equal to 0']
   end
 end
