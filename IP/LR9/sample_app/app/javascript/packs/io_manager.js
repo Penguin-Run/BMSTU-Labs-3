@@ -18,6 +18,7 @@ function show_result(data){
 
 handleAjaxSuccess = function (event) {
 	[data, status, xhr] = event.detail;
+	console.log('testtest')
 	show_result(data);
 }
 
