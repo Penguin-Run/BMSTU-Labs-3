@@ -1,0 +1,34 @@
+<header>
+    <%= render 'home/navbar' %>
+</header>
+<div class="container">
+    <div class="row row-quest question_title">
+		<span href="" id="new_questions_text">Исповедоваться</a>
+    </div>
+
+    <div class="row">
+        <div id="question-section" class="col">
+            <% if @error_message %>
+                <p id="question_form_err_message"><%= @error_message %></p>
+            <% end %>
+            <%= form_tag(ask_path, :method => "post") do %>
+                <br/>
+                <%= label_tag "Назови свой грех", nil, class: 'form_label_text' %>
+                <%= text_field_tag :title, "", class: 'form-control' %>
+                <br/>
+                <%= label_tag "Расскажи свою историю", nil, class: 'form_label_text' %>
+                <%= text_area :text, "", class: 'form-control' %>
+                <br/>
+                <%= submit_tag "Поведать свету", class: 'btn btn-outline-success my-2 my-sm-0'  %>
+            <% end %> 
+        </div>
+    </div>
+
+    <div id = "login_status_info">
+		<% if current_user %>
+		  Logged in as <%= current_user.email %>
+		<% else %>
+		  You've not yet authenticated
+		<% end %>
+    </div>
+</div>

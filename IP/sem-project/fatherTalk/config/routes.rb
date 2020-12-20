@@ -2,7 +2,8 @@
 
 Rails.application.routes.draw do
   root 'home#index'
-  
+  get 'ask' => 'home#add_question'
+  post 'ask' => 'home#add_question'
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'users#new', as: 'signup'

@@ -4,7 +4,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <form class="form-inline mt-2 mt-md-0" action="{% url 'ask_question' %}">
             <input class="form-control mr-sm-2" type="text" placeholder="Найти путь к Богу.." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Исповедоваться</button>
+            <a href = "/ask" class="btn btn-outline-success my-2 my-sm-0">Исповедоваться</a>
         </form>
     </div>
 <!--     {% if request.user.is_authenticated %}

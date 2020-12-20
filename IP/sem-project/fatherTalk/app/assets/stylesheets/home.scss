@@ -6,7 +6,23 @@
 	margin-top: 15px;
 }
 
+.form_label_text {
+	font-size: 20px;
+/*	font-weight: bold;*/
+/*	margin-right: 15px;*/
+}
+
 #login_status_info {
+	position: absolute; 
+    bottom: 10px; 
+}
+
+.question_date {
+	position: absolute; 
+    bottom: 24px; 
+}
+
+.question_time {
 	position: absolute; 
     bottom: 10px; 
 }
