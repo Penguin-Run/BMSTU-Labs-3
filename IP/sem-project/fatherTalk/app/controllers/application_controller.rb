@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
     else
       @current_user = nil
     end
+    return @current_user
   end
 
   def authenticate

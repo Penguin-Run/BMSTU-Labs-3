@@ -6,6 +6,18 @@
 	margin-top: 15px;
 }
 
+#navbar-logo {
+	color: white;
+}
+
+#navbar-logo:hover span {display:none}
+#navbar-logo:hover:before {content:"Беды с башкой"}
+
+#navbarCollapse {
+	position: absolute; 
+	left: 400px;
+}
+
 .form_label_text {
 	font-size: 20px;
 /*	font-weight: bold;*/
@@ -83,9 +95,7 @@ code {
   font-size: 80%;
 }
 
-#navbar-logo {
-	color: white;
-}
+
 
 .question-box {
     border: 1px solid gray;

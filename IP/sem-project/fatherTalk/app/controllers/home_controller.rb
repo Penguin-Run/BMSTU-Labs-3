@@ -9,6 +9,7 @@ class HomeController < ApplicationController
 #TODO: проверка на аутентификацию !
   def add_question
   	# если пришел запрос с самой формы
+  	console
   	if !request.get?
   		title = params[:title]
   		text = params[:text].first
