@@ -11,7 +11,7 @@
 				<div class="question-text"><%= question.text %></div>
 				<div class="row">
 					<div class="col">
-						<a class="ans_tag" href="{% url 'question_answers' question.id  %}">показать всю исповедь</a>
+						<a class="ans_tag" href="/question/<%= question.id %>">показать всю исповедь</a>
 					</div>
 				</div>
 				<div class="question_date"><%= question.created_at.to_s.split.first %></div>

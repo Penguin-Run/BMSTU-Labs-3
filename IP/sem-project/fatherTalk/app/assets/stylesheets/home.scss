@@ -2,6 +2,89 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+@font-face {
+  font-family: CyrillicOld;
+  src: url("/assets/fonts/CyrillicOld.ttf");
+}
+
+#logo_text {
+	font-size: 30px;
+}
+
+div {
+	font-family: CyrillicOld;
+}
+
+a {
+	font-family: CyrillicOld;
+}
+
+span {
+	font-family: CyrillicOld;
+}
+
+p {
+	font-family: CyrillicOld;
+}
+
+h1 {
+	font-family: CyrillicOld;
+}
+
+h2 {
+	font-family: CyrillicOld;
+}
+
+h3 {
+	font-family: CyrillicOld;
+}
+
+h4 {
+	font-family: CyrillicOld;
+}
+
+h5 {
+	font-family: CyrillicOld;
+}
+
+h6 {
+	font-family: CyrillicOld;
+}
+
+#main_question_title {
+	font-family: CyrillicOld;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#main_question_text {
+	font-family: CyrillicOld;
+	font-size: 20px;
+}
+
+#main_question_date {
+	font-family: CyrillicOld;
+	font-size: 20px;
+}
+
+#main_question_time {
+	font-family: CyrillicOld;
+	font-size: 15px;
+	margin-top: 4px;
+}
+
+.main_question_row {
+	margin-top: 15px;
+}
+
+.main_question_left_block {
+
+}
+
+.main_question_right_block {
+
+}
+
 #question-section {
 	margin-top: 15px;
 }
@@ -11,6 +94,7 @@
 }
 
 #navbar-logo:hover span {display:none}
+
 #navbar-logo:hover:before {content:"Беды с башкой"}
 
 #navbarCollapse {
@@ -117,8 +201,8 @@ code {
 #main_question_img {
 	margin-left: 15px;
 	margin-top: 15px;
-	width: 150px;
-	width: 150px;
+	width: 200px;
+	width: 200px;
 	padding: 0px;
 }
 

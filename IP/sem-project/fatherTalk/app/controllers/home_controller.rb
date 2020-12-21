@@ -29,6 +29,13 @@ class HomeController < ApplicationController
     end
   end
 
+  def question_page
+  	qid = params[:qid]
+
+  	@question = Question.find_by(id: qid)
+
+  end
+
 
   def validate_text(text)
   	!text.empty?

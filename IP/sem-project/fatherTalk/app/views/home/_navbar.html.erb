@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a href="/" id="navbar-logo" class="navbar-brand"><span>Беседы с батюшкой</span></a>
+    <a href="/" id="navbar-logo" class="navbar-brand"><span id="logo_text">Беседы с батюшкой</span></a>
     <!-- <a class="navbar-brand">Беседы с батюшкой</a> -->
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <form class="form-inline mt-2 mt-md-0" action="{% url 'ask_question' %}">
             <input class="form-control mr-sm-2" type="text" placeholder="Найти путь к Богу.." aria-label="Search">
-            <a href = "/ask" class="btn btn-outline-success my-2 my-sm-0">Исповедоваться</a>
+            <a href = "/ask" class="btn btn-outline-success my-2 my-sm-0"><span>Исповедоваться</span></a>
         </form>
         <div class="profile_info">
             <span id="name"> <!-- {{ request.user.username }} --><% if current_user %> <%= current_user.email %> <% end %></span>

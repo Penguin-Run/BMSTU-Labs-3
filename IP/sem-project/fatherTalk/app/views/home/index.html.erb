@@ -13,11 +13,13 @@
     </div>
 
     <div id = "login_status_info">
-		<% if current_user %>
-		  Logged in as <%= current_user.email %>
-		<% else %>
-		  You've not yet authenticated
-		<% end %>
+		<span>
+            <% if current_user %>
+              Logged in as <%= current_user.email %>
+            <% else %>
+              You've not yet authenticated
+            <% end %>
+        </span>
     </div>
 </div>
 
