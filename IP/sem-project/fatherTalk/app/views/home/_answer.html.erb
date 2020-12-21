@@ -1,0 +1,22 @@
+<% if !@answers.is_a?(String) %>
+	<% @answers.each do |answer| %>
+		<div class="row question-box">
+			<div class="col-3 question_box_left">
+				<div class="row">
+					<img src="/krest.jpg" alt="My image" class="question-img">
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="question_box_right">
+					<div class="question-text"><%= answer.text %></div>
+					<div class="row">
+					</div>
+					<div class="question_date"><%= answer.created_at.to_s.split.first %></div>
+					<div class="question_time"><%= answer.created_at.to_s.split.second %></div>
+				</div>
+			</div>
+		</div>
+	<% end %>
+<% else %>
+	<h6> <%= @answers %> </h6>
+<% end %>

@@ -2,9 +2,13 @@
 
 Rails.application.routes.draw do
   root 'home#index'
+
   get 'ask' => 'home#add_question'
   post 'ask' => 'home#add_question'
   get 'question/:qid' => 'home#question_page'
+  get 'question' => 'home#index'
+  post 'question' => 'home#question_page'
+  
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'users#new', as: 'signup'

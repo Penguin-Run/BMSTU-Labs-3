@@ -26,6 +26,29 @@
 
     </div>
 
+    <hr/>
+    <% if @error_message %>
+        <span class="error_form_message"><%= @error_message %></span>
+    <% end %>
+    <% if current_user.user_type == "father" %>
+        
+      <!--   "/question/<%= @question.id %>" -->
+        <%= form_tag(question_path, :method => "post") do %>
+            <br/>
+            <%= label_tag "Помочь сыну божьему своим ответом", nil, class: 'form_label_text' %>
+            <%= text_area :text, "", class: 'form-control' %>
+            <%= hidden_field_tag :qid,  @question.id %>
+            <br/>
+            <%= submit_tag "Поведать свету", class: 'btn btn-outline-success my-2 my-sm-0'  %>
+        <% end %> 
+    <% end %>
+
+    <hr/>
+
+    <%= render 'home/answer' %>
+
+    <hr/>
+
     <div id = "login_status_info">
 		<% if current_user %>
 		  Logged in as <%= current_user.email %>
