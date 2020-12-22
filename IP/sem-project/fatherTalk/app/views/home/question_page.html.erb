@@ -3,11 +3,11 @@
 </header>
 <div class="container">
     <div class="row row-quest question_title">
-		<span href="" id="new_questions_text">Исповедь</a>
+		<span href="" id="new_questions_text"><%= t("headers.question") %></a>
     </div>
 
     <div class="row main_question_row">
-        <div class="row col-12 main_question">
+        <div id="main_question_div" class="row col-12 main_question">
             <div class="col-3 main_question_left_block">
                 <div class="row">
                     <img id="main_question_img" src="/krest.jpg" alt="My image" class="question-img">
@@ -17,8 +17,10 @@
                 <div class="question_box_right">
                     <div id="main_question_title" class="question-title"><%= @question.title %></div>
                     <div id="main_question_text" class="question-text"><%= @question.text %></div>
-                    <div id="main_question_date" class="question_date"><%= @question.created_at.to_s.split.first %></div>
-                    <div id="main_question_time" class="question_time"><%= @question.created_at.to_s.split.second %></div>
+                    <div class="time">
+                        <div id="main_question_date" class=""><%= @question.created_at.to_s.split.first %></div>
+                        <div id="main_question_time" class=""><%= @question.created_at.to_s.split.second %></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,16 +32,16 @@
     <% if @error_message %>
         <span class="error_form_message"><%= @error_message %></span>
     <% end %>
-    <% if current_user.user_type == "father" %>
+    <% if current_user && current_user.user_type == "father" %>
         
       <!--   "/question/<%= @question.id %>" -->
         <%= form_tag(question_path, :method => "post") do %>
             <br/>
-            <%= label_tag "Помочь сыну божьему своим ответом", nil, class: 'form_label_text' %>
+            <%= label_tag t("forms.answer.labels.text"), nil, class: 'form_label_text' %>
             <%= text_area :text, "", class: 'form-control' %>
             <%= hidden_field_tag :qid,  @question.id %>
             <br/>
-            <%= submit_tag "Поведать свету", class: 'btn btn-outline-success my-2 my-sm-0'  %>
+            <%= submit_tag t("forms.answer.labels.submit"), class: 'btn btn-outline-success my-2 my-sm-0'  %>
         <% end %> 
     <% end %>
 
@@ -56,5 +58,11 @@
 		  You've not yet authenticated
 		<% end %>
     </div>
+    <li class="nav-item <%= "active" if I18n.locale == :ru %>">
+        <%= link_to "РУС", { locale: :ru }, class: "" %>
+    </li>
+    <li class="nav-item <%= "active" if I18n.locale == :en %>">
+        <%= link_to "ENG", { locale: :en }, class: "" %>
+    </li>
 </div>
 

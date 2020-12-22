@@ -1,6 +1,16 @@
 class ApplicationController < ActionController::Base
-	helper_method :authenticate
+	before_action :set_locale
+
+  helper_method :authenticate
 	helper_method :current_user
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
+  end
 
   def current_user
     if session[:user_id]

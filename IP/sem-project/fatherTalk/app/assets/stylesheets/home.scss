@@ -7,9 +7,17 @@
   src: url("/assets/fonts/CyrillicOld.ttf");
 }
 
+#main_question_div {
+	height: auto;
+}
+
 .error_form_message {
 	color: red;
 	font-size: 20px;
+}
+
+.time {
+	margin-top: 100px;
 }
 
 #logo_text {
@@ -58,8 +66,9 @@ h6 {
 
 #main_question_title {
 	font-family: CyrillicOld;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
+	margin-bottom: 15px;
 }
 
 #main_question_text {
@@ -98,9 +107,7 @@ h6 {
 	color: white;
 }
 
-#navbar-logo:hover span {display:none}
 
-#navbar-logo:hover:before {content:"Беды с башкой"}
 
 #navbarCollapse {
 	position: absolute; 
@@ -273,6 +280,10 @@ code {
 
 #name {
 	color: white;
+}
+
+.row {
+	height: auto;
 }
 
 .profile_info {

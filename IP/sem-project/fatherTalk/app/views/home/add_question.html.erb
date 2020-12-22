@@ -1,9 +1,11 @@
+
+
 <header>
     <%= render 'home/navbar' %>
 </header>
 <div class="container">
     <div class="row row-quest question_title">
-		<span href="" id="new_questions_text">Исповедоваться</a>
+		<span href="" id="new_questions_text"><%=t("headers.ask")%></a>
     </div>
 
     <div class="row">
@@ -13,13 +15,13 @@
             <% end %>
             <%= form_tag(ask_path, :method => "post") do %>
                 <br/>
-                <%= label_tag "Назови свой грех", nil, class: 'form_label_text' %>
+                <%= label_tag t("forms.question.labels.title"), nil, class: 'form_label_text' %>
                 <%= text_field_tag :title, "", class: 'form-control' %>
                 <br/>
-                <%= label_tag "Расскажи свою историю", nil, class: 'form_label_text' %>
+                <%= label_tag t("forms.question.labels.text"), nil, class: 'form_label_text' %>
                 <%= text_area :text, "", class: 'form-control' %>
                 <br/>
-                <%= submit_tag "Поведать свету", class: 'btn btn-outline-success my-2 my-sm-0'  %>
+                <%= submit_tag t("forms.question.labels.submit"), class: 'btn btn-outline-success my-2 my-sm-0'  %>
             <% end %> 
         </div>
     </div>
@@ -34,4 +36,10 @@
         	<% end %>
         </p>
     </div>
+    <li class="nav-item <%= "active" if I18n.locale == :ru %>">
+        <%= link_to "РУС", { locale: :ru }, class: "" %>
+    </li>
+    <li class="nav-item <%= "active" if I18n.locale == :en %>">
+        <%= link_to "ENG", { locale: :en }, class: "" %>
+    </li>
 </div>

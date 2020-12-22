@@ -30,4 +30,33 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  logo: "Father talk"
+  hover: "Father talk"
+  js_click: "This is how many times you have clicked on confessions this time: "
+  
+  navbar:
+    add_question_button: "Confess"
+    search_value: "Find path to God.."
+    login: "Log in"
+    signup: "Sign up"
+    logout: "Log out"
+
+  forms:
+    question:
+      labels:
+        title: "Name your sin"
+        text: "Tell yout story"
+        submit: "Open up to the world!"
+    answer:
+      labels:
+        text: "Help son of a God with your answer"
+        submit: "Open up to the world!"
+
+  headers:
+    ask: "Confess"
+    question: "Confession"
+    index: "Confessions"
+
+    links:
+      show: "show all"
+

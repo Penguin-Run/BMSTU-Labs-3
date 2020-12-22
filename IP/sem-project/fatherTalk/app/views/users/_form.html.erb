@@ -12,6 +12,14 @@
   <% end %>
 
   <div class="field">
+    <%= label_tag "Выберите тип пользователя", nil, class: '' %>
+    <%= radio_button_tag :user_type, "father", class: '' %>
+    <label for="user_type_father">Священнослужитель</label>
+    <%= radio_button_tag :user_type, "believer", class: '' %>
+    <label for="user_type_user">Обычный пользователь</label>
+  </div>
+
+  <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>

@@ -1,0 +1,30 @@
+ru:
+  logo: "Беседы с батюшкой"
+  hover: "Беды с башкой"
+  js_click: "Вот сколько раз ты нажал на исповеди в этот раз: "
+
+  navbar:
+    add_question_button: "Исповедоваться"
+    search_value: "Найти путь к Богу.."
+    login: "Войти"
+    signup: "Зарегистрироваться"
+    logout: "Выйти"
+
+  forms:
+    question:
+      labels:
+        title: "Назови свой грех"
+        text: "Расскажи свою историю"
+        submit: "Поведать свету"
+    answer:
+      labels:
+        text: "Помочь сыну божьему своим ответом"
+        submit: "Поведать свету"
+
+  headers:
+    ask: "Исповедоваться"
+    question: "Исповедь"
+    index: "Исповеди"
+
+  links:
+    show: "показать полностью"

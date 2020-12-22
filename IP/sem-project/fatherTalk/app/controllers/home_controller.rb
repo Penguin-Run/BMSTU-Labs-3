@@ -6,10 +6,8 @@ class HomeController < ApplicationController
   	@questions = Question.all
   end
 
-  # TODO: сделать валидацию текста на запретные слова
-  # TODO: сделать регистрацию с указанием типа пользователя
-  # TODO: добавить юнит тесты
   # TODO: добавить интернационализацию
+  # TODO: сделать какой нибудь js
   # TODO: сделать более православный дизайн
 
   def add_question
